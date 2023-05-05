@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Input</title>
+    <link rel="stylesheet" href="./form.css">
+  </head>
+  <body>
+    <form method="post" action="/form.html">
+      <label for="Name"
+        >Name:<br />
+        <input type="text" name="name" placeholder="Queen Kisivuli" />
+      </label>
+      <br />
+      <label for="Age"
+        >Birth Date:<br />
+        <input type="date" name="age" />
+      </label>
+      <br />
+      <label for="Age"
+        >AGE:<br />
+        <input type="number" name="age" />
+      </label>
+      <br />
+      <label for="about">
+        Describe your self:<br />
+        <textarea type="text" name="about" rows="10" cols="20"></textarea>
+      </label>
+      <br />
+      <label for="email">
+        Email:<br />
+        <input
+          type="email"
+          name="email"
+          placeholder="queenskisivuli@gmail.com"
+        />
+      </label>
+      <br />
+      <label for="gender">
+        Gender:<br />
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+      </label>
+      <br />
+      <label for="country">
+        country:<br />
+        <input type="text" name="country" list="countryname" />
+        <datalist id="countryname">
+          <option value="Kenya"></option>
+          <option value="Uganda"></option>
+          <option value="Tanzania"></option>
+          <option value="Malawi"></option>
+        </datalist>
+      </label>
+      <br />
+      <label>
+        image:<br />
+        <input type="file" name="Queen" />
+      </label>
+      <br />
+      <label for="signeture">
+        Sign:<br />
+        <input
+          maxlength="30"
+          minlength="5"
+          type="text"
+          name="sign"
+          pattern="[A-Za-z]"
+          placeholder="Queens Kisivuli"
+        />
+      </label>
+      <br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
